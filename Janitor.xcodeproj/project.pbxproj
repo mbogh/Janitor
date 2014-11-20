@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5AC6188B1A1DD1A600059513 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6188A1A1DD1A600059513 /* main.swift */; };
+		5AC6189A1A1DF22100059513 /* JanitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC618991A1DF22100059513 /* JanitorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,20 @@
 /* Begin PBXFileReference section */
 		5AC618871A1DD1A600059513 /* Janitor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Janitor; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC6188A1A1DD1A600059513 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5AC618951A1DF22100059513 /* JanitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JanitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC618981A1DF22100059513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AC618991A1DF22100059513 /* JanitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanitorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5AC618841A1DD1A600059513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AC618921A1DF22100059513 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				5AC618891A1DD1A600059513 /* Janitor */,
+				5AC618961A1DF22100059513 /* JanitorTests */,
 				5AC618881A1DD1A600059513 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				5AC618871A1DD1A600059513 /* Janitor */,
+				5AC618951A1DF22100059513 /* JanitorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +73,23 @@
 				5AC6188A1A1DD1A600059513 /* main.swift */,
 			);
 			path = Janitor;
+			sourceTree = "<group>";
+		};
+		5AC618961A1DF22100059513 /* JanitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AC618991A1DF22100059513 /* JanitorTests.swift */,
+				5AC618971A1DF22100059513 /* Supporting Files */,
+			);
+			path = JanitorTests;
+			sourceTree = "<group>";
+		};
+		5AC618971A1DF22100059513 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AC618981A1DF22100059513 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +112,23 @@
 			productReference = 5AC618871A1DD1A600059513 /* Janitor */;
 			productType = "com.apple.product-type.tool";
 		};
+		5AC618941A1DF22100059513 /* JanitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AC6189D1A1DF22100059513 /* Build configuration list for PBXNativeTarget "JanitorTests" */;
+			buildPhases = (
+				5AC618911A1DF22100059513 /* Sources */,
+				5AC618921A1DF22100059513 /* Frameworks */,
+				5AC618931A1DF22100059513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JanitorTests;
+			productName = JanitorTests;
+			productReference = 5AC618951A1DF22100059513 /* JanitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +139,9 @@
 				ORGANIZATIONNAME = "Just A Beech";
 				TargetAttributes = {
 					5AC618861A1DD1A600059513 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					5AC618941A1DF22100059513 = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -109,9 +159,20 @@
 			projectRoot = "";
 			targets = (
 				5AC618861A1DD1A600059513 /* Janitor */,
+				5AC618941A1DF22100059513 /* JanitorTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AC618931A1DF22100059513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5AC618831A1DD1A600059513 /* Sources */ = {
@@ -119,6 +180,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AC6188B1A1DD1A600059513 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AC618911A1DF22100059513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC6189A1A1DF22100059513 /* JanitorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +283,38 @@
 			};
 			name = Release;
 		};
+		5AC6189B1A1DF22100059513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JanitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5AC6189C1A1DF22100059513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JanitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -231,6 +332,15 @@
 			buildConfigurations = (
 				5AC6188F1A1DD1A600059513 /* Debug */,
 				5AC618901A1DD1A600059513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AC6189D1A1DF22100059513 /* Build configuration list for PBXNativeTarget "JanitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AC6189B1A1DF22100059513 /* Debug */,
+				5AC6189C1A1DF22100059513 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
