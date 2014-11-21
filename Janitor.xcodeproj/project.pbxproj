@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A141C931A1FC9FA0024D028 /* ProvisioningProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A141C921A1FC9FA0024D028 /* ProvisioningProfile.swift */; };
 		5AC6188B1A1DD1A600059513 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6188A1A1DD1A600059513 /* main.swift */; };
 		5AC6189A1A1DF22100059513 /* JanitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC618991A1DF22100059513 /* JanitorTests.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5A141C921A1FC9FA0024D028 /* ProvisioningProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfile.swift; sourceTree = "<group>"; };
 		5AC618871A1DD1A600059513 /* Janitor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Janitor; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC6188A1A1DD1A600059513 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5AC618951A1DF22100059513 /* JanitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JanitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				5AC6188A1A1DD1A600059513 /* main.swift */,
+				5A141C921A1FC9FA0024D028 /* ProvisioningProfile.swift */,
 			);
 			path = Janitor;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A141C931A1FC9FA0024D028 /* ProvisioningProfile.swift in Sources */,
 				5AC6188B1A1DD1A600059513 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +347,7 @@
 				5AC6189C1A1DF22100059513 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
