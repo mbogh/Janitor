@@ -40,5 +40,11 @@ class ProvisioningProfileTests: XCTestCase {
         XCTAssert(profile?.name == "Total Recall Development", "Name should match that of the profile :)")
     }
 
-    
+    func testProfileTeamNameAndID() {
+        let bundle = NSBundle(forClass: self.dynamicType)
+        let filePath = bundle.pathForResource("Total_Recall_Development", ofType: "mobileprovision")
+        let profile = ProvisioningProfile(filePath: filePath!)
+        XCTAssert(profile?.teamName == "Morten Soerensen", "Team name should match that of the profile.")
+        XCTAssert(profile?.teamID == "6Y3N739X56", "Team ID should match that of the profile.")
+    }
 }

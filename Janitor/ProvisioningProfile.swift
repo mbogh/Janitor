@@ -16,6 +16,8 @@ struct ProvisioningProfile {
     }
 
     let name: String
+    let teamName: String
+    let teamID = "NA"
 
     /// Designated initializer
     init?(filePath path: String) {
@@ -24,8 +26,14 @@ struct ProvisioningProfile {
         let dictionary = ProvisioningProfile.dictionary(contentsOfFile: self.filePath)
 
         if dictionary["Name"] == nil { return nil }
+        if dictionary["TeamName"] == nil { return nil }
+        if dictionary["TeamIdentifier"] == nil { return nil }
+        let teamIdentifier = dictionary["TeamIdentifier"] as [String]
+        if teamIdentifier.isEmpty { return nil }
 
         self.name = dictionary["Name"] as String
+        self.teamName = dictionary["TeamName"] as String
+        self.teamID = teamIdentifier.first!
     }
 
     private static func decode(fileData data: NSData) -> NSData? {

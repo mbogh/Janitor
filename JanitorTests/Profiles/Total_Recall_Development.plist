@@ -2,83 +2,65 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-
-  <key>AppIDName</key>
-  <string>Total Recall</string>
-
-  <key>ApplicationIdentifierPrefix</key>
-  <array>
-    <string>6Y3N739X56</string>
-  </array>
-
-  <key>CreationDate</key>
-  <date>2014-10-30T20:44:39Z</date>
-
-  <key>DeveloperCertificates</key>
-  <array>
-    <data>MIIFnDCCBISgAwIBAgIIV9Ie9XMIMwowDQYJKoZIhvcNAQEFBQAwgZYxCzAJBgNVBAYTAlVTMRMwEQYDVQQKDApBcHBsZSBJbmMuMSwwKgYDVQQLDCNBcHBsZSBXb3JsZHdpZGUgRGV2ZWxvcGVyIFJlbGF0aW9uczFEMEIGA1UEAww7QXBwbGUgV29ybGR3aWRlIERldmVsb3BlciBSZWxhdGlvbnMgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTQxMDMwMjAyNzUwWhcNMTUxMDMwMjAyNzUwWjCBjzEaMBgGCgmSJomT8ixkAQEMCjRWQUE5TDM4RkYxNDAyBgNVBAMMK2lQaG9uZSBEZXZlbG9wZXI6IE1vcnRlbiBCb2VnaCAoMjVBNTJTRlM3QikxEzARBgNVBAsMCjZZM043MzlYNTYxGTAXBgNVBAoMEE1vcnRlbiBTb2VyZW5zZW4xCzAJBgNVBAYTAkRLMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqw8WJansD52dISjRBX0+OPysH+0P6nGMNNCrTFrBtLNRasTdC4KM/bjG72UV+qqTuFQFBUKiwPvpTbQxKS7i+SK9vmqFDlsmuvLER/D6a3i8kLZdM7xAVYd3eU+HizXB/Ozd2dbAuvomyTs3PQQkLMi8N68YQU+HXAL7t1PY+5cV3c0yls58P3wt97VqXcsv7gzRPdDQBnV3QgZWJIJonE2i95ZJxqq6UFbbMY2/SIhxLlSBA8AIFy6Bt1N4rueV7wUFZy6z7VGMlES3E7gLD5WDNHX8mEAlhJWKk6kzMNy8cUvVKZTsw0vNjEjh9MeU6gqe09uLK7EVFCkLo2OcKQIDAQABo4IB8TCCAe0wHQYDVR0OBBYEFIiN3LySAedObBIsyat7cyxx2C5/MAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUiCcXCam2GGCL7Ou69kdZxVJUo7cwggEPBgNVHSAEggEGMIIBAjCB/wYJKoZIhvdjZAUBMIHxMIHDBggrBgEFBQcCAjCBtgyBs1JlbGlhbmNlIG9uIHRoaXMgY2VydGlmaWNhdGUgYnkgYW55IHBhcnR5IGFzc3VtZXMgYWNjZXB0YW5jZSBvZiB0aGUgdGhlbiBhcHBsaWNhYmxlIHN0YW5kYXJkIHRlcm1zIGFuZCBjb25kaXRpb25zIG9mIHVzZSwgY2VydGlmaWNhdGUgcG9saWN5IGFuZCBjZXJ0aWZpY2F0aW9uIHByYWN0aWNlIHN0YXRlbWVudHMuMCkGCCsGAQUFBwIBFh1odHRwOi8vd3d3LmFwcGxlLmNvbS9hcHBsZWNhLzBNBgNVHR8ERjBEMEKgQKA+hjxodHRwOi8vZGV2ZWxvcGVyLmFwcGxlLmNvbS9jZXJ0aWZpY2F0aW9uYXV0aG9yaXR5L3d3ZHJjYS5jcmwwDgYDVR0PAQH/BAQDAgeAMBYGA1UdJQEB/wQMMAoGCCsGAQUFBwMDMBMGCiqGSIb3Y2QGAQIBAf8EAgUAMA0GCSqGSIb3DQEBBQUAA4IBAQDFuFW3t730QSlRszRu4ZvaI/8BAfbAGfOP93IJeMY76NJCu5POJ0yni9vEM4P3ofqomuUyVoQmLJeB2xHaF6X6G8+YZwBdm6AA48QQASBcoswe7lE9O38ngSSs6HrVxB3vnRJJeY/AhqsVg8gnmeMecmRDWxu5772CzIg8B9MkV0jxZKAvzQYN1KsxPuakmKRhZblFNE8mWYIbGIshbDLBqongWIkuUyJ1XH8WTFfJai2Yn3hh7Ye8ETZ3SJZi/AqkGbMBeOMnm+QGzqUzeEsrsl6qW9ghCBI6X5xZt+6RNCeRPbWSMh2jt2gVOsGs2M9n6aUoCno9RAM/ItMnGJWG</data>
-  </array>
-
-  <key>Entitlements</key>
-  <dict>
-
-    <key>com.apple.developer.team-identifier</key>
-    <string>6Y3N739X56</string>
-
-    <key>aps-environment</key>
-    <string>development</string>
-
-    <key>keychain-access-groups</key>
-    <array>
-      <string>6Y3N739X56.*</string>
-    </array>
-
-    <key>application-identifier</key>
-    <string>6Y3N739X56.com.justabeech.TotalRecall</string>
-
-    <key>get-task-allow</key>
-    <true/>
-  </dict>
-
-  <key>ExpirationDate</key>
-  <date>2015-10-30T20:44:39Z</date>
-
-  <key>Name</key>
-  <string>Total Recall Development</string>
-
-  <key>ProvisionedDevices</key>
-  <array>
-    <string>83fd3f0575a81aef959b5314a3c8465ff9518e1b</string>
-    <string>e1bee1dce31e888cb0f625285318caf34ce00ec3</string>
-    <string>c966fb6cdcf2cc74147585f4ec301dbee0d0dd60</string>
-    <string>7a705f8a7f8d74eb40a2fb73b7d62513e2e387be</string>
-    <string>e8636d15294ccbd4e52176a9f29aa2cb1f1789a8</string>
-    <string>61496a85bc420765081e81c6e041adb5b796839f</string>
-    <string>2b50466437be3286c12ba58dcc2aef2d9b725538</string>
-    <string>3bf315bd4d128266d870e54fddbea563bd5592e1</string>
-    <string>c051ff0213ccc67caa7504b057e4aa522eafbafa</string>
-    <string>62f31bfb1a347bb499664aed33def8777c89abe8</string>
-    <string>23ea75be63b4f424dd3f2a6a4eb74e41988b680c</string>
-    <string>d495f9c54e13e956a0cda270ba583ecee3538a7b</string>
-    <string>8cc98bf1811c3eeef3278ee21e8ca58726e041b5</string>
-    <string>4bbfc073fada41389d23c9b8663f9dbe2334646e</string>
-  </array>
-
-  <key>TeamIdentifier</key>
-  <array>
-    <string>6Y3N739X56</string>
-  </array>
-
-  <key>TeamName</key>
-  <string>Morten Soerensen</string>
-
-  <key>TimeToLive</key>
-  <integer>365</integer>
-
-  <key>UUID</key>
-  <string>94df47ba-bcff-4037-960b-c72dac6723d2</string>
-
-  <key>Version</key>
-  <integer>1</integer>
+	<key>AppIDName</key>
+	<string>Total Recall</string>
+	<key>ApplicationIdentifierPrefix</key>
+	<array>
+		<string>6Y3N739X56</string>
+	</array>
+	<key>CreationDate</key>
+	<date>2014-10-30T20:44:39Z</date>
+	<key>DeveloperCertificates</key>
+	<array>
+		<data>MIIFnDCCBISgAwIBAgIIV9Ie9XMIMwowDQYJKoZIhvcNAQEFBQAwgZYxCzAJBgNVBAYTAlVTMRMwEQYDVQQKDApBcHBsZSBJbmMuMSwwKgYDVQQLDCNBcHBsZSBXb3JsZHdpZGUgRGV2ZWxvcGVyIFJlbGF0aW9uczFEMEIGA1UEAww7QXBwbGUgV29ybGR3aWRlIERldmVsb3BlciBSZWxhdGlvbnMgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTQxMDMwMjAyNzUwWhcNMTUxMDMwMjAyNzUwWjCBjzEaMBgGCgmSJomT8ixkAQEMCjRWQUE5TDM4RkYxNDAyBgNVBAMMK2lQaG9uZSBEZXZlbG9wZXI6IE1vcnRlbiBCb2VnaCAoMjVBNTJTRlM3QikxEzARBgNVBAsMCjZZM043MzlYNTYxGTAXBgNVBAoMEE1vcnRlbiBTb2VyZW5zZW4xCzAJBgNVBAYTAkRLMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqw8WJansD52dISjRBX0+OPysH+0P6nGMNNCrTFrBtLNRasTdC4KM/bjG72UV+qqTuFQFBUKiwPvpTbQxKS7i+SK9vmqFDlsmuvLER/D6a3i8kLZdM7xAVYd3eU+HizXB/Ozd2dbAuvomyTs3PQQkLMi8N68YQU+HXAL7t1PY+5cV3c0yls58P3wt97VqXcsv7gzRPdDQBnV3QgZWJIJonE2i95ZJxqq6UFbbMY2/SIhxLlSBA8AIFy6Bt1N4rueV7wUFZy6z7VGMlES3E7gLD5WDNHX8mEAlhJWKk6kzMNy8cUvVKZTsw0vNjEjh9MeU6gqe09uLK7EVFCkLo2OcKQIDAQABo4IB8TCCAe0wHQYDVR0OBBYEFIiN3LySAedObBIsyat7cyxx2C5/MAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUiCcXCam2GGCL7Ou69kdZxVJUo7cwggEPBgNVHSAEggEGMIIBAjCB/wYJKoZIhvdjZAUBMIHxMIHDBggrBgEFBQcCAjCBtgyBs1JlbGlhbmNlIG9uIHRoaXMgY2VydGlmaWNhdGUgYnkgYW55IHBhcnR5IGFzc3VtZXMgYWNjZXB0YW5jZSBvZiB0aGUgdGhlbiBhcHBsaWNhYmxlIHN0YW5kYXJkIHRlcm1zIGFuZCBjb25kaXRpb25zIG9mIHVzZSwgY2VydGlmaWNhdGUgcG9saWN5IGFuZCBjZXJ0aWZpY2F0aW9uIHByYWN0aWNlIHN0YXRlbWVudHMuMCkGCCsGAQUFBwIBFh1odHRwOi8vd3d3LmFwcGxlLmNvbS9hcHBsZWNhLzBNBgNVHR8ERjBEMEKgQKA+hjxodHRwOi8vZGV2ZWxvcGVyLmFwcGxlLmNvbS9jZXJ0aWZpY2F0aW9uYXV0aG9yaXR5L3d3ZHJjYS5jcmwwDgYDVR0PAQH/BAQDAgeAMBYGA1UdJQEB/wQMMAoGCCsGAQUFBwMDMBMGCiqGSIb3Y2QGAQIBAf8EAgUAMA0GCSqGSIb3DQEBBQUAA4IBAQDFuFW3t730QSlRszRu4ZvaI/8BAfbAGfOP93IJeMY76NJCu5POJ0yni9vEM4P3ofqomuUyVoQmLJeB2xHaF6X6G8+YZwBdm6AA48QQASBcoswe7lE9O38ngSSs6HrVxB3vnRJJeY/AhqsVg8gnmeMecmRDWxu5772CzIg8B9MkV0jxZKAvzQYN1KsxPuakmKRhZblFNE8mWYIbGIshbDLBqongWIkuUyJ1XH8WTFfJai2Yn3hh7Ye8ETZ3SJZi/AqkGbMBeOMnm+QGzqUzeEsrsl6qW9ghCBI6X5xZt+6RNCeRPbWSMh2jt2gVOsGs2M9n6aUoCno9RAM/ItMnGJWG</data>
+	</array>
+	<key>Entitlements</key>
+	<dict>
+		<key>com.apple.developer.team-identifier</key>
+		<string>6Y3N739X56</string>
+		<key>aps-environment</key>
+		<string>development</string>
+		<key>keychain-access-groups</key>
+		<array>
+			<string>6Y3N739X56.*</string>
+		</array>
+		<key>application-identifier</key>
+		<string>6Y3N739X56.com.justabeech.TotalRecall</string>
+		<key>get-task-allow</key>
+		<true/>
+	</dict>
+	<key>ExpirationDate</key>
+	<date>2015-10-30T20:44:39Z</date>
+	<key>Name</key>
+	<string>Total Recall Development</string>
+	<key>ProvisionedDevices</key>
+	<array>
+		<string>83fd3f0575a81aef959b5314a3c8465ff9518e1b</string>
+		<string>e1bee1dce31e888cb0f625285318caf34ce00ec3</string>
+		<string>c966fb6cdcf2cc74147585f4ec301dbee0d0dd60</string>
+		<string>7a705f8a7f8d74eb40a2fb73b7d62513e2e387be</string>
+		<string>e8636d15294ccbd4e52176a9f29aa2cb1f1789a8</string>
+		<string>61496a85bc420765081e81c6e041adb5b796839f</string>
+		<string>2b50466437be3286c12ba58dcc2aef2d9b725538</string>
+		<string>3bf315bd4d128266d870e54fddbea563bd5592e1</string>
+		<string>c051ff0213ccc67caa7504b057e4aa522eafbafa</string>
+		<string>62f31bfb1a347bb499664aed33def8777c89abe8</string>
+		<string>23ea75be63b4f424dd3f2a6a4eb74e41988b680c</string>
+		<string>d495f9c54e13e956a0cda270ba583ecee3538a7b</string>
+		<string>8cc98bf1811c3eeef3278ee21e8ca58726e041b5</string>
+		<string>4bbfc073fada41389d23c9b8663f9dbe2334646e</string>
+	</array>
+	<key>TeamIdentifier</key>
+	<array>
+		<string>6Y3N739X56</string>
+	</array>
+	<key>TeamName</key>
+	<string>Morten Soerensen</string>
+	<key>TimeToLive</key>
+	<integer>365</integer>
+	<key>UUID</key>
+	<string>94df47ba-bcff-4037-960b-c72dac6723d2</string>
+	<key>Version</key>
+	<integer>1</integer>
 </dict>
 </plist>
