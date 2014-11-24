@@ -11,6 +11,7 @@
 		5A141C951A212FDB0024D028 /* ProvisioningProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A141C941A212FDB0024D028 /* ProvisioningProfileTests.swift */; };
 		5A141C961A2130CA0024D028 /* ProvisioningProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A141C921A1FC9FA0024D028 /* ProvisioningProfile.swift */; };
 		5A141C991A21393E0024D028 /* Total_Recall_Development.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 5A141C981A21393E0024D028 /* Total_Recall_Development.mobileprovision */; };
+		5A37BA6A1A23B8AA0035E947 /* Total_Recall_Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A37BA691A23B8AA0035E947 /* Total_Recall_Development.plist */; };
 		5AC6188B1A1DD1A600059513 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6188A1A1DD1A600059513 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		5A141C921A1FC9FA0024D028 /* ProvisioningProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfile.swift; sourceTree = "<group>"; };
 		5A141C941A212FDB0024D028 /* ProvisioningProfileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileTests.swift; sourceTree = "<group>"; };
 		5A141C981A21393E0024D028 /* Total_Recall_Development.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = Total_Recall_Development.mobileprovision; sourceTree = "<group>"; };
+		5A37BA691A23B8AA0035E947 /* Total_Recall_Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Total_Recall_Development.plist; sourceTree = "<group>"; };
 		5AC618871A1DD1A600059513 /* Janitor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Janitor; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC6188A1A1DD1A600059513 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5AC618951A1DF22100059513 /* JanitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JanitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +59,7 @@
 		5A141C971A21393E0024D028 /* Profiles */ = {
 			isa = PBXGroup;
 			children = (
+				5A37BA691A23B8AA0035E947 /* Total_Recall_Development.plist */,
 				5A141C981A21393E0024D028 /* Total_Recall_Development.mobileprovision */,
 			);
 			path = Profiles;
@@ -184,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A37BA6A1A23B8AA0035E947 /* Total_Recall_Development.plist in Resources */,
 				5A141C991A21393E0024D028 /* Total_Recall_Development.mobileprovision in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
