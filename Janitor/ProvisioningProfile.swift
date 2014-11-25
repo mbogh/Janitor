@@ -18,6 +18,11 @@ struct ProvisioningProfile {
     let name: String
     let teamName: String
     let teamID = "NA"
+    let creationDate: NSDate
+    let expirationDate: NSDate
+    var isExpired: Bool {
+        return self.expirationDate.compare(NSDate()) == .OrderedAscending
+    }
 
     /// Designated initializer
     init?(filePath path: String) {
@@ -30,10 +35,14 @@ struct ProvisioningProfile {
         if dictionary["TeamIdentifier"] == nil { return nil }
         let teamIdentifier = dictionary["TeamIdentifier"] as [String]
         if teamIdentifier.isEmpty { return nil }
+        if dictionary["CreationDate"] == nil { return nil }
+        if dictionary["ExpirationDate"] == nil { return nil }
 
         self.name = dictionary["Name"] as String
         self.teamName = dictionary["TeamName"] as String
         self.teamID = teamIdentifier.first!
+        self.creationDate = dictionary["CreationDate"] as NSDate
+        self.expirationDate = dictionary["ExpirationDate"] as NSDate
     }
 
     private static func decode(fileData data: NSData) -> NSData? {

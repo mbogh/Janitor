@@ -53,4 +53,31 @@ class ProvisioningProfileTests: XCTestCase {
         let profile = ProvisioningProfile(filePath: filePath!)
         XCTAssert(profile?.teamID == "6Y3N739X56", "Team ID should match that of the profile.")
     }
+
+    func testProfileCreationDate() {
+        let bundle = NSBundle(forClass: self.dynamicType)
+        let filePath = bundle.pathForResource("Total_Recall_Development", ofType: "mobileprovision")
+        let profile = ProvisioningProfile(filePath: filePath!)
+        let date =  NSDate(timeIntervalSinceReferenceDate: 436394679) // 2014/10/30 - 20:44:39 from http://blog.paddlefish.net/?page_id=90
+        XCTAssertTrue(profile!.creationDate.isEqualToDate(date), "Creation date should match that of the profile.")
+    }
+
+    func testProfileExpirationDate() {
+        let bundle = NSBundle(forClass: self.dynamicType)
+        let filePath = bundle.pathForResource("Total_Recall_Development", ofType: "mobileprovision")
+        let profile = ProvisioningProfile(filePath: filePath!)
+        let date =  NSDate(timeIntervalSinceReferenceDate: 467930679) // 2015/10/30 - 20:44:39 from http://blog.paddlefish.net/?page_id=90
+        XCTAssertTrue(profile!.expirationDate.isEqualToDate(date), "Expiration date should match that of the profile.")
+    }
+
+    func testProfileIsExpired() {
+        let bundle = NSBundle(forClass: self.dynamicType)
+        let filePath = bundle.pathForResource("Total_Recall_Development", ofType: "mobileprovision")
+        let profile = ProvisioningProfile(filePath: filePath!)
+        XCTAssertFalse(profile!.isExpired, "isExpired should should return true for future expiration dates.")
+
+        let filePathExpired = bundle.pathForResource("Studenterhue", ofType: "mobileprovision")
+        let profileExpired = ProvisioningProfile(filePath: filePathExpired!)
+        XCTAssertTrue(profileExpired!.isExpired, "isExpired should should return false for past expiration dates.")
+    }
 }

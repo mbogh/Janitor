@@ -13,6 +13,8 @@
 		5A141C991A21393E0024D028 /* Total_Recall_Development.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 5A141C981A21393E0024D028 /* Total_Recall_Development.mobileprovision */; };
 		5A37BA6A1A23B8AA0035E947 /* Total_Recall_Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A37BA691A23B8AA0035E947 /* Total_Recall_Development.plist */; };
 		5AC6188B1A1DD1A600059513 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6188A1A1DD1A600059513 /* main.swift */; };
+		5AD59A891A250ADA00A0B9D5 /* Studenterhue.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 5AD59A871A250ADA00A0B9D5 /* Studenterhue.mobileprovision */; };
+		5AD59A8A1A250ADA00A0B9D5 /* Studenterhue.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AD59A881A250ADA00A0B9D5 /* Studenterhue.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +38,8 @@
 		5AC6188A1A1DD1A600059513 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5AC618951A1DF22100059513 /* JanitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JanitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC618981A1DF22100059513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AD59A871A250ADA00A0B9D5 /* Studenterhue.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = Studenterhue.mobileprovision; sourceTree = "<group>"; };
+		5AD59A881A250ADA00A0B9D5 /* Studenterhue.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Studenterhue.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 		5A141C971A21393E0024D028 /* Profiles */ = {
 			isa = PBXGroup;
 			children = (
+				5AD59A881A250ADA00A0B9D5 /* Studenterhue.plist */,
+				5AD59A871A250ADA00A0B9D5 /* Studenterhue.mobileprovision */,
 				5A37BA691A23B8AA0035E947 /* Total_Recall_Development.plist */,
 				5A141C981A21393E0024D028 /* Total_Recall_Development.mobileprovision */,
 			);
@@ -187,7 +193,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AD59A8A1A250ADA00A0B9D5 /* Studenterhue.plist in Resources */,
 				5A37BA6A1A23B8AA0035E947 /* Total_Recall_Development.plist in Resources */,
+				5AD59A891A250ADA00A0B9D5 /* Studenterhue.mobileprovision in Resources */,
 				5A141C991A21393E0024D028 /* Total_Recall_Development.mobileprovision in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
