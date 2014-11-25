@@ -74,10 +74,10 @@ class ProvisioningProfileTests: XCTestCase {
         let bundle = NSBundle(forClass: self.dynamicType)
         let filePath = bundle.pathForResource("Total_Recall_Development", ofType: "mobileprovision")
         let profile = ProvisioningProfile(filePath: filePath!)
-        XCTAssertFalse(profile!.isExpired, "isExpired should should return true for future expiration dates.")
+        XCTAssertFalse(profile!.isExpired, "isExpired should should return false for future expiration dates.")
 
         let filePathExpired = bundle.pathForResource("Studenterhue", ofType: "mobileprovision")
         let profileExpired = ProvisioningProfile(filePath: filePathExpired!)
-        XCTAssertTrue(profileExpired!.isExpired, "isExpired should should return false for past expiration dates.")
+        XCTAssertTrue(profileExpired!.isExpired, "isExpired should should return true for past expiration dates.")
     }
 }
