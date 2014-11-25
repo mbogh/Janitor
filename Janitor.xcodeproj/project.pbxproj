@@ -15,6 +15,10 @@
 		5AC6188B1A1DD1A600059513 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6188A1A1DD1A600059513 /* main.swift */; };
 		5AD59A891A250ADA00A0B9D5 /* Studenterhue.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 5AD59A871A250ADA00A0B9D5 /* Studenterhue.mobileprovision */; };
 		5AD59A8A1A250ADA00A0B9D5 /* Studenterhue.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AD59A881A250ADA00A0B9D5 /* Studenterhue.plist */; };
+		5AD59A991A252A6A00A0B9D5 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD59A951A252A6A00A0B9D5 /* Commandant.framework */; };
+		5AD59A9A1A252A6A00A0B9D5 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD59A961A252A6A00A0B9D5 /* LlamaKit.framework */; };
+		5AD59A9B1A252A6A00A0B9D5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD59A971A252A6A00A0B9D5 /* Nimble.framework */; };
+		5AD59A9C1A252A6A00A0B9D5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD59A981A252A6A00A0B9D5 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +44,10 @@
 		5AC618981A1DF22100059513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AD59A871A250ADA00A0B9D5 /* Studenterhue.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = Studenterhue.mobileprovision; sourceTree = "<group>"; };
 		5AD59A881A250ADA00A0B9D5 /* Studenterhue.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Studenterhue.plist; sourceTree = "<group>"; };
+		5AD59A951A252A6A00A0B9D5 /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Commandant.framework; sourceTree = "<group>"; };
+		5AD59A961A252A6A00A0B9D5 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LlamaKit.framework; sourceTree = "<group>"; };
+		5AD59A971A252A6A00A0B9D5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
+		5AD59A981A252A6A00A0B9D5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AD59A9C1A252A6A00A0B9D5 /* Quick.framework in Frameworks */,
+				5AD59A9B1A252A6A00A0B9D5 /* Nimble.framework in Frameworks */,
+				5AD59A991A252A6A00A0B9D5 /* Commandant.framework in Frameworks */,
+				5AD59A9A1A252A6A00A0B9D5 /* LlamaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,7 @@
 			children = (
 				5AC618891A1DD1A600059513 /* Janitor */,
 				5AC618961A1DF22100059513 /* JanitorTests */,
+				5AD59A8C1A25293D00A0B9D5 /* Frameworks */,
 				5AC618881A1DD1A600059513 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +127,17 @@
 				5AC618981A1DF22100059513 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AD59A8C1A25293D00A0B9D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AD59A951A252A6A00A0B9D5 /* Commandant.framework */,
+				5AD59A961A252A6A00A0B9D5 /* LlamaKit.framework */,
+				5AD59A971A252A6A00A0B9D5 /* Nimble.framework */,
+				5AD59A981A252A6A00A0B9D5 /* Quick.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +326,10 @@
 		5AC6188F1A1DD1A600059513 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -309,6 +337,10 @@
 		5AC618901A1DD1A600059513 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
