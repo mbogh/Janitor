@@ -7,9 +7,3 @@
 //
 
 import Foundation
-import Commandant
-
-let commands = CommandRegistry()
-
-println("Hello, World!")
-
