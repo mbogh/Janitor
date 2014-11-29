@@ -34,7 +34,7 @@
 		5A141C941A212FDB0024D028 /* ProvisioningProfileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileTests.swift; sourceTree = "<group>"; };
 		5A141C981A21393E0024D028 /* Total_Recall_Development.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = Total_Recall_Development.mobileprovision; sourceTree = "<group>"; };
 		5A37BA691A23B8AA0035E947 /* Total_Recall_Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Total_Recall_Development.plist; sourceTree = "<group>"; };
-		5AC618871A1DD1A600059513 /* Janitor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Janitor; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC618871A1DD1A600059513 /* janitor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = janitor; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC6188A1A1DD1A600059513 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5AC618951A1DF22100059513 /* JanitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JanitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC618981A1DF22100059513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		5AC618881A1DD1A600059513 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5AC618871A1DD1A600059513 /* Janitor */,
+				5AC618871A1DD1A600059513 /* janitor */,
 				5AC618951A1DF22100059513 /* JanitorTests.xctest */,
 			);
 			name = Products;
@@ -133,7 +133,7 @@
 			);
 			name = Janitor;
 			productName = Janitor;
-			productReference = 5AC618871A1DD1A600059513 /* Janitor */;
+			productReference = 5AC618871A1DD1A600059513 /* janitor */;
 			productType = "com.apple.product-type.tool";
 		};
 		5AC618941A1DF22100059513 /* JanitorTests */ = {
@@ -176,6 +176,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5AC6187E1A1DD1A600059513;
 			productRefGroup = 5AC618881A1DD1A600059513 /* Products */;
@@ -303,7 +304,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				PRODUCT_NAME = janitor;
 			};
 			name = Debug;
 		};
@@ -311,7 +313,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				PRODUCT_NAME = janitor;
 			};
 			name = Release;
 		};
