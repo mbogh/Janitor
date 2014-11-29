@@ -8,16 +8,37 @@
 
 import Foundation
 
+enum Commands: String {
+    case Help = "help"
+    case List = "list"
+
+    init(_ rawValueSafe: String?) {
+        if let rawValue = rawValueSafe {
+            self = Commands(rawValue: rawValue) ?? .Help
+        }
+        else {
+            self = Commands.Help
+        }
+    }
+}
+
+// Fetch arguments passed to the executable.
 var arguments = Process.arguments
 
 // Remove the executable name.
-assert(arguments.count >= 1)
 arguments.removeAtIndex(0)
 
-let verb = arguments.first ?? "help"
+// Create verb from argument
+let verb = Commands(arguments.first)
+
+// Remove verb from arguments
 if arguments.count > 0 {
-    // Remove the command name.
     arguments.removeAtIndex(0)
 }
 
-println("\(arguments) \(verb)")
+switch verb {
+case .Help:
+    println("Help")
+case .List:
+    println("List")
+}
