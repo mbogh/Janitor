@@ -14,11 +14,12 @@ class ProvisioningProfileManager {
 
         var error: NSError?
         let path = "\(NSHomeDirectory())/Library/MobileDevice/Provisioning Profiles/"
-        let files = NSFileManager.defaultManager().contentsOfDirectoryAtPath(path, error: &error) as [String]
-        let provisioningFiles = files.filter{filename in filename.hasSuffix(".mobileprovision")}
-        for provisioningFile in provisioningFiles {
-            if let profile = ProvisioningProfile(filePath: path.stringByAppendingPathComponent(provisioningFile)) {
-                profiles.append(profile)
+        if let files = NSFileManager.defaultManager().contentsOfDirectoryAtPath(path, error: &error) as? [String] {
+            let provisioningFiles = files.filter{filename in filename.hasSuffix(".mobileprovision")}
+            for provisioningFile in provisioningFiles {
+                if let profile = ProvisioningProfile(filePath: path.stringByAppendingPathComponent(provisioningFile)) {
+                    profiles.append(profile)
+                }
             }
         }
         return profiles
