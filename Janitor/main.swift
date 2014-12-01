@@ -42,5 +42,6 @@ case .Help:
 case .List:
     println("List of profiles")
     let profileManager = ProvisioningProfileManager()
-    println("\(profileManager.list())")
+    let profiles = profileManager.list().reduce(""){previous, next in "\(previous)\n\(next)"}
+    println("\(profiles)")
 }

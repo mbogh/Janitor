@@ -72,3 +72,9 @@ struct ProvisioningProfile {
         return NSDictionary()
     }
 }
+
+extension ProvisioningProfile : Printable {
+    var description: String {
+        return "\(self.name) - \(self.expirationDate)"
+    }
+}
