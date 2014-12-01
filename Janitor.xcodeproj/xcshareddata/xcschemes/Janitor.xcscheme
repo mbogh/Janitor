@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5AC618861A1DD1A600059513"
-               BuildableName = "Janitor"
+               BuildableName = "janitor"
                BlueprintName = "Janitor"
                ReferencedContainer = "container:Janitor.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AC618861A1DD1A600059513"
-            BuildableName = "Janitor"
+            BuildableName = "janitor"
             BlueprintName = "Janitor"
             ReferencedContainer = "container:Janitor.xcodeproj">
          </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AC618861A1DD1A600059513"
-            BuildableName = "Janitor"
+            BuildableName = "janitor"
             BlueprintName = "Janitor"
             ReferencedContainer = "container:Janitor.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AC618861A1DD1A600059513"
-            BuildableName = "Janitor"
+            BuildableName = "janitor"
             BlueprintName = "Janitor"
             ReferencedContainer = "container:Janitor.xcodeproj">
          </BuildableReference>

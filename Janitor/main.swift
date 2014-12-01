@@ -40,5 +40,7 @@ switch verb {
 case .Help:
     println("Help")
 case .List:
-    println("List")
+    println("List of profiles")
+    let profileManager = ProvisioningProfileManager()
+    println("\(profileManager.list())")
 }
