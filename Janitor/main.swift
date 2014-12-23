@@ -11,6 +11,7 @@ import Foundation
 enum Commands: String {
     case Help = "help"
     case List = "list"
+    case Version = "version"
 
     init(_ rawValueSafe: String?) {
         if let rawValue = rawValueSafe {
@@ -44,4 +45,7 @@ case .List:
     let profileManager = ProvisioningProfileManager()
     let profiles = profileManager.list().reduce(""){previous, next in "\(previous)\n\(next)"}
     println("\(profiles)")
+case .Version:
+    let versionString = "0.0.1"
+    println("\(versionString)")
 }
