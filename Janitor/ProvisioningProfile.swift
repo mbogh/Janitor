@@ -23,6 +23,9 @@ struct ProvisioningProfile {
     var isExpired: Bool {
         return self.expirationDate.compare(NSDate()) == .OrderedAscending
     }
+    var status: String {
+        return isExpired ? "😡" : "😄"
+    }
 
     /// Designated initializer
     init?(filePath path: String) {
@@ -72,6 +75,7 @@ struct ProvisioningProfile {
 
 extension ProvisioningProfile : Printable {
     var description: String {
-        return "\(self.name) - \(self.expirationDate)"
+        let name = self.name.stringByPaddingToLength(40, withString: " ", startingAtIndex: 0)
+        return "\(status)  - \(name) - \(self.expirationDate)"
     }
 }
