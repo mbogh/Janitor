@@ -15,6 +15,8 @@
 		5A48EBEC1A2CEDC2004F8FFA /* ProvisioningProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48EBEB1A2CEDC2004F8FFA /* ProvisioningProfileManager.swift */; };
 		5A48EBEE1A2CF33E004F8FFA /* ProvisioningProfileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48EBED1A2CF33E004F8FFA /* ProvisioningProfileManagerTests.swift */; };
 		5A48EBEF1A2CF347004F8FFA /* ProvisioningProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A48EBEB1A2CEDC2004F8FFA /* ProvisioningProfileManager.swift */; };
+		5A50A2D81A49711F00409C88 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50A2D71A49711F00409C88 /* Extensions.swift */; };
+		5A50A2D91A49726500409C88 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50A2D71A49711F00409C88 /* Extensions.swift */; };
 		5AC6188B1A1DD1A600059513 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6188A1A1DD1A600059513 /* main.swift */; };
 		5AD59A891A250ADA00A0B9D5 /* Studenterhue.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 5AD59A871A250ADA00A0B9D5 /* Studenterhue.mobileprovision */; };
 		5AD59A8A1A250ADA00A0B9D5 /* Studenterhue.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AD59A881A250ADA00A0B9D5 /* Studenterhue.plist */; };
@@ -39,6 +41,7 @@
 		5A37BA691A23B8AA0035E947 /* Total_Recall_Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Total_Recall_Development.plist; sourceTree = "<group>"; };
 		5A48EBEB1A2CEDC2004F8FFA /* ProvisioningProfileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileManager.swift; sourceTree = "<group>"; };
 		5A48EBED1A2CF33E004F8FFA /* ProvisioningProfileManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileManagerTests.swift; sourceTree = "<group>"; };
+		5A50A2D71A49711F00409C88 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5AC618871A1DD1A600059513 /* janitor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = janitor; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC6188A1A1DD1A600059513 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5AC618951A1DF22100059513 /* JanitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JanitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +103,7 @@
 				5AC6188A1A1DD1A600059513 /* main.swift */,
 				5A141C921A1FC9FA0024D028 /* ProvisioningProfile.swift */,
 				5A48EBEB1A2CEDC2004F8FFA /* ProvisioningProfileManager.swift */,
+				5A50A2D71A49711F00409C88 /* Extensions.swift */,
 			);
 			path = Janitor;
 			sourceTree = "<group>";
@@ -218,6 +222,7 @@
 				5A141C931A1FC9FA0024D028 /* ProvisioningProfile.swift in Sources */,
 				5A48EBEC1A2CEDC2004F8FFA /* ProvisioningProfileManager.swift in Sources */,
 				5AC6188B1A1DD1A600059513 /* main.swift in Sources */,
+				5A50A2D81A49711F00409C88 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A50A2D91A49726500409C88 /* Extensions.swift in Sources */,
 				5A48EBEF1A2CF347004F8FFA /* ProvisioningProfileManager.swift in Sources */,
 				5A141C961A2130CA0024D028 /* ProvisioningProfile.swift in Sources */,
 				5A48EBEE1A2CF33E004F8FFA /* ProvisioningProfileManagerTests.swift in Sources */,

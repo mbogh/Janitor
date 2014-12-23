@@ -16,8 +16,8 @@ struct ProvisioningProfile {
     }
 
     let name: String
-    let teamName: String
-    let teamID = "NA"
+    let teamName: String?
+    let teamID: String?
     let creationDate: NSDate
     let expirationDate: NSDate
     var isExpired: Bool {
@@ -31,16 +31,13 @@ struct ProvisioningProfile {
         let dictionary = ProvisioningProfile.dictionary(contentsOfFile: self.filePath)
 
         if dictionary["Name"] == nil { return nil }
-        if dictionary["TeamName"] == nil { return nil }
-        if dictionary["TeamIdentifier"] == nil { return nil }
-        let teamIdentifier = dictionary["TeamIdentifier"] as [String]
-        if teamIdentifier.isEmpty { return nil }
         if dictionary["CreationDate"] == nil { return nil }
         if dictionary["ExpirationDate"] == nil { return nil }
 
         self.name = dictionary["Name"] as String
-        self.teamName = dictionary["TeamName"] as String
-        self.teamID = teamIdentifier.first!
+        self.teamName = dictionary["TeamName"] as? String
+        let teamIdentifier = dictionary["TeamIdentifier"] as? [String]
+        self.teamID = bind(teamIdentifier) { teamIdentifier in teamIdentifier.first }
         self.creationDate = dictionary["CreationDate"] as NSDate
         self.expirationDate = dictionary["ExpirationDate"] as NSDate
     }
