@@ -20,7 +20,7 @@ class ProvisioningProfileManagerTests: XCTestCase {
             let provisioningFiles = files.filter{filename in filename.hasSuffix(".mobileprovision")}
 
             let list = self.profileManager.list()
-            XCTAssertTrue(provisioningFiles.count == list.count, "Profile manager should return the same aoumt of objects as there are .mobileprovision files in ~/Library/MobileDevice/Provisioning Profiles/.")
+            XCTAssertTrue(provisioningFiles.count == list.count, "Profile manager should return the same amount of objects as there are .mobileprovision files in ~/Library/MobileDevice/Provisioning Profiles/.")
         }
     }
 
