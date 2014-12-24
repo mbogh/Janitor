@@ -24,7 +24,7 @@ struct ProvisioningProfile {
         return self.expirationDate.compare(NSDate()) == .OrderedAscending
     }
     var status: String {
-        return isExpired ? "😡" : "😄"
+        return isExpired ? "❤️" : "💚"
     }
 
     /// Designated initializer
