@@ -22,6 +22,8 @@ class ProvisioningProfileManager {
                 }
             }
         }
-        return profiles
+        return profiles.sorted({ (profile1, profile2) -> Bool in
+            return profile1.name.lowercaseString < profile2.name.lowercaseString
+        })
     }
 }
