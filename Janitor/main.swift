@@ -39,7 +39,10 @@ if arguments.count > 0 {
 
 switch verb {
 case .Help:
-    println("Help")
+    println("Commands for Janitor")
+    println("  help     Displays this message.")
+    println("  list     List all Provisioning Profiles on your machine.")
+    println("  version  Display the current version of Janitor.")
 case .List:
     println("List of profiles")
     let profileManager = ProvisioningProfileManager()
